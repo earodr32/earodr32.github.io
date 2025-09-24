@@ -1,0 +1,187 @@
+:root {
+  /* ASU Primary Colors */
+  --asu-maroon: #8C1D40;
+  --asu-gold: #FFC627;
+  --asu-rich-black: #000000;
+  --asu-white: #FFFFFF;
+
+  /* ASU Secondary Colors */
+  --asu-green: #78BE20;
+  --asu-blue: #00A3E0;
+  --asu-orange: #FF7F32;
+  --asu-gray: #747474;
+  --asu-copper: #AF674B;
+  --asu-turquoise: #4AB7C4;
+  --asu-pink: #E74973;
+
+  --dark-tint: rgba(0,0,0,0.2);
+}
+
+/* Basic reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  line-height: 1.6;
+}
+
+/* Style the sidenav */
+.sidenav {
+  height: 100vh; /* Full-height: will cover the entire screen */
+  width: 250px; /* Set the width of the sidenav */
+  position: fixed; /* Fixed sidebar */
+  top: 0;
+  left: 0;
+  background-color: var(--asu-maroon);
+  padding-top: 20px;
+  overflow-y: auto; /* Add scrolling if sidebar content is too long */
+}
+
+/* Style the sidenav links */
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--asu-white);
+  display: block;
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+
+/* Style the links on mouse hover */
+.sidenav a:hover {
+  font-weight: bold;
+  background-color: var(--dark-tint);
+}
+
+/* Style the main content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  padding: 20px;
+  max-width: calc(100% - 250px);
+}
+
+.headshot-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-radius: 50%;
+  border: 3px solid var(--asu-gold);
+}
+
+.headshot-caption-name {
+  text-align: center;
+  color: var(--asu-white);
+  margin: 15px 10px 10px 10px;
+  font-size: 18px;
+}
+
+.headshot-caption {
+  text-align: center;
+  color: var(--asu-white);
+  margin: 5px 10px;
+  font-size: 12px;
+}
+
+/* Research and Publication styles */
+.research-item {
+  margin-bottom: 20px;
+}
+
+.research-title {
+  color: var(--asu-maroon);
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.research-description {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.research-interests {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.research-interests li {
+  padding: 5px 0;
+  border-left: 3px solid var(--asu-gold);
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+
+.publication {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 3px solid var(--asu-maroon);
+  background-color: #f9f9f9;
+}
+
+/* Section headers */
+h2 {
+  color: var(--asu-maroon);
+  border-bottom: 2px solid var(--asu-gold);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: var(--asu-maroon);
+  margin-bottom: 15px;
+}
+
+/* Links */
+a {
+  color: var(--asu-maroon);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--asu-gold);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .sidenav a {
+    float: left;
+    padding: 10px;
+  }
+  
+  .main {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  
+  .headshot-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .sidenav {
+    display: none;
+  }
+  
+  .main {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
