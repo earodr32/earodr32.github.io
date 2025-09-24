@@ -18,10 +18,90 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
   line-height: 1.6;
   background-color: var(--white);
   color: var(--text-black);
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Navigation */
+.top-nav {
+  background-color: var(--white);
+  border-bottom: 2px solid var(--primary-turquoise);
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.top-nav a {
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--text-black);
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.top-nav a:hover {
+  background-color: var(--primary-turquoise);
+  color: var(--white);
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.headshot-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-turquoise);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  color: var(--primary-turquoise);
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.profile-title {
+  color: var(--text-black);
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.profile-affiliation {
+  color: var(--text-gray);
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  color: var(--text-gray);
+  font-size: 0.9em;
+  margin: 3px 0;
 }
 
 /* Style the sidenav */
@@ -67,10 +147,13 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 2px solid var(--border-gray);
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+  object-position: center;
 }
 
 .headshot-caption-name {
@@ -175,36 +258,39 @@ p {
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-  .sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  .sidenav a {
-    float: left;
-    padding: 10px;
-  }
-  
-  .main {
-    margin-left: 0;
-    max-width: 100%;
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
   }
   
   .headshot-img {
     width: 150px;
     height: 150px;
   }
+  
+  .profile-name {
+    font-size: 2em;
+  }
+  
+  .top-nav a {
+    display: block;
+    margin: 5px 10px;
+    padding: 8px 15px;
+  }
+  
+  .main {
+    padding: 0 15px 30px 15px;
+  }
 }
 
 /* Print styles */
 @media print {
-  .sidenav {
+  .top-nav {
     display: none;
   }
   
-  .main {
-    margin-left: 0;
-    max-width: 100%;
+  .profile-header {
+    padding: 20px 0;
   }
 }
