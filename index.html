@@ -10,20 +10,27 @@
   <link rel="shortcut icon" type="image" href="./meXicanidad.png" />
 </head>
 <body>
-<div class="sidenav">
-    <img src="headshot3.jpg" alt="Esther Rodriguez" class="headshot-img">
-    <p class="headshot-caption-name"><b>Esther Rodriguez</b></p>
-    <p class="headshot-caption">Arizona State University</p>
-    <p class="headshot-caption">Data Science PhD Student</p>
-    <p class="headshot-caption">[Your Address]</p>
-    <p class="headshot-caption">[Your Phone]</p>
-    <p class="headshot-caption">[Your Email]</p>
-    <br>
+<nav class="top-nav">
   <a href="#about">About</a>
   <a href="#research">Research</a>
   <a href="#publications">Publications</a>
   <a href="#contact">Contact</a>
+</nav>
+
+<div class="profile-header">
+    <img src="headshot3.jpg" alt="Esther Rodriguez" class="headshot-img">
+    <div class="profile-info">
+        <h1 class="profile-name">Esther Rodriguez</h1>
+        <p class="profile-title">Data Science PhD Student</p>
+        <p class="profile-affiliation">Arizona State University</p>
+        <div class="contact-info">
+            <p>[Your Address]</p>
+            <p>[Your Phone]</p>
+            <p>[Your Email]</p>
+        </div>
+    </div>
 </div>
+
 <div class="main">
     <!-- Home -->
     <br id="about">
@@ -80,25 +87,42 @@
     <section id="publications">
       <h2>Publications</h2>
       <br>
-      <h3>Journal Articles</h3>
+      
+      <!-- Option 1: Direct Google Scholar Integration -->
+      <div class="scholar-section">
+        <p>For a complete and up-to-date list of publications, please visit my <a href="[YOUR_GOOGLE_SCHOLAR_URL]" target="_blank">Google Scholar profile</a>.</p>
+        <br>
+        <!-- Embed Google Scholar publications -->
+        <div id="scholar-publications">
+          <!-- This will be populated by Google Scholar -->
+          <script src="https://scholar.google.com/citations?user=[YOUR_SCHOLAR_ID]&hl=en&cstart=0&pagesize=100&view_op=list_works&gmla=AJsN-F7..."></script>
+        </div>
+      </div>
+      
+      <!-- Option 2: Manual Publications with Scholar Links -->
+      <h3>Selected Publications</h3>
       <br>
       <div class="publication">
-        <p><strong>[Your Name]</strong>, [Co-authors]. "[Paper Title]." <em>[Journal Name]</em>, [Year]. [DOI or link if available]</p>
+        <p><strong>Esther Rodriguez</strong>, [Co-authors]. "[Paper Title]." <em>[Journal/Conference Name]</em>, [Year]. 
+        <a href="[DOI_or_paper_link]" target="_blank">[DOI/Link]</a> | 
+        <a href="[Google_Scholar_citation_link]" target="_blank">Google Scholar</a></p>
       </div>
-      <br>
-      <h3>Conference Proceedings</h3>
       <br>
       <div class="publication">
-        <p><strong>[Your Name]</strong>, [Co-authors]. "[Paper Title]." In <em>[Conference Name]</em>, [Year]. [DOI or link if available]</p>
+        <p><strong>Esther Rodriguez</strong>, [Co-authors]. "[Paper Title]." <em>[Journal/Conference Name]</em>, [Year]. 
+        <a href="[DOI_or_paper_link]" target="_blank">[DOI/Link]</a> | 
+        <a href="[Google_Scholar_citation_link]" target="_blank">Google Scholar</a></p>
       </div>
       <br>
-      <h3>Working Papers</h3>
-      <br>
-      <div class="publication">
-        <p><strong>[Your Name]</strong>, [Co-authors]. "[Paper Title]." Under review/In preparation, [Year].</p>
+      
+      <!-- Option 3: Automatic BibBase Integration (Alternative) -->
+      <!-- 
+      <div class="bibbase-section">
+        <script src="https://bibbase.org/show?bib=[YOUR_GOOGLE_SCHOLAR_BIB_URL]&jsonp=1&theme=simple&noBootstrap=1"></script>
       </div>
-      <br>
-      <p><em>Note: This section will be updated as publications become available. You can also integrate with Google Scholar or ORCID for automatic updates.</em></p>
+      -->
+      
+      <p><em>Note: Replace [YOUR_GOOGLE_SCHOLAR_URL] with your actual Google Scholar profile URL above.</em></p>
     </section>
     <br><hr><br>
     
