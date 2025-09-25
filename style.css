@@ -58,10 +58,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px;
+  padding: 20px 10px;
   max-width: 1400px;
   margin: 0 auto;
-  gap: 80px;
+  gap: 60px;
 }
 
 .profile-column {
