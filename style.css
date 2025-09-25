@@ -74,10 +74,13 @@ body {
 .headshot-img {
   width: 200px;
   height: 200px;
+  border-radius: 50%;
   border: none;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   margin: 0 auto;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .profile-name {
