@@ -121,9 +121,10 @@ body {
 
 /* Style the main content */
 .main {
-  margin-left: 250px; /* Same as the width of the sidenav */
-  padding: 20px;
-  max-width: calc(100% - 250px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  width: 100%;
 }
 
 
