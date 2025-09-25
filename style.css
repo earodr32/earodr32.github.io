@@ -80,7 +80,8 @@ body {
   margin: 0 auto;
   display: block;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
+  transform: scale(1.2);
 }
 
 .profile-name {
