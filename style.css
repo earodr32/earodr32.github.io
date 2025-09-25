@@ -23,6 +23,7 @@ body {
   color: var(--text-black);
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 /* Top Navigation */
@@ -58,10 +59,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 10px;
+  padding: 60px 20px;
   max-width: 1400px;
   margin: 0 auto;
-  gap: 60px;
+  gap: 80px;
 }
 
 .profile-column {
@@ -272,8 +273,8 @@ p {
   }
   
   .headshot-img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
   
   .profile-name {
