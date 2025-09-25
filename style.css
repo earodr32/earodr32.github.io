@@ -117,19 +117,6 @@ body {
   line-height: 1.4;
 }
 
-/* Style the sidenav */
-.sidenav {
-  height: 100vh; /* Full-height: will cover the entire screen */
-  width: 250px; /* Set the width of the sidenav */
-  position: fixed; /* Fixed sidebar */
-  top: 0;
-  left: 0;
-  background-color: var(--white);
-  border-right: 1px solid var(--border-gray);
-  padding-top: 20px;
-  overflow-y: auto; /* Add scrolling if sidebar content is too long */
-}
-
 /* Remove all old sidebar styles - no longer needed */
 
 /* Style the main content */
